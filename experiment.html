@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Tsun Wai (Ron) Siu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Experiment</title>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
-                    HTML
-                </a>
-            </li>
-            <li>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/">
-                    CSS
-                </a>
-            </li>
-
-            <li>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">
-                    JavaScript
-                </a>
-            </li>
-
-            <li><a href="https://www.python.org/">Want to do python?</a></li>
-        </ul>
-    </nav>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+                        HTML
+                    </a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/">
+                        CSS
+                    </a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">
+                        JavaScript
+                    </a>
+                </li>
+                <li><a href="https://www.python.org/">Want to do python?</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Let's experiment something different in HTML!</h1>
     <p>Let's Go!!</p>
     <div>
@@ -52,8 +55,7 @@
         var canvasContext = canvas.getContext("2d");
         canvasContext.font = "bold 30px Comic Sans";
         canvasContext.fillText("Welcome!!!", 10, 50);
-    </script>
-    <script>
+
         function showContent() {
             var temp = document.getElementsByTagName("template")[0];
             var clon = temp.content.cloneNode(true);
